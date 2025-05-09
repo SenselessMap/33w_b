@@ -1,32 +1,28 @@
 /*
-Theme Name: thème 33w
-Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base développer dans le cadre du cours de Worpress
-Version: 1.0
-Tested up to: 6.2
-Requires PHP: 7.0
+Theme Name: theme 33w
+Author: Hannah Lauzon
+Author URI: https://github.com/SenselessMap/
+Description: Thème de base développer dans le cadre du cours de Worpress. J'ai manqué le début du cours 2 donc j'ai dû travailler à partir d'un pull à partir de //github.com/eddytuto/h25-4w4-gr1.git pour le cours 3 (celui du 9 mai). J'ai fait le pull au début du cours et j'ai fait les changement du cours 3 en vous suivant.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
 
 /* Les variables*/
-@import "variables/couleurs";
-@import "variables/dimensions";
+@import "variable/couleurs";
+@import "variable/dimensions";
 
 @import "base/simple";
 @import "base/lien";
 
-@import "composants/menu";
-@import "composants/carte";
-@import "composants/recherche";
+@import "composant/menu";
+@import "composant/carte";
+@import "composant/recherche";
 
 
 /* importation du style principal du theme */
 //@import "base/titre";
-@import "base/general";
+//@import "base/general";
 
 @import "layout/entete";
 @import "layout/footer";
