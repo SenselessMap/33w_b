@@ -13,11 +13,22 @@ Text Domain: club-voyage
 */
 
 /* Les variables*/
-// @import "variable/couleurs";
+@import "variables/couleurs";
+@import "variables/dimensions";
+
+@import "base/simple";
+@import "base/lien";
+
+@import "composants/menu";
+@import "composants/carte";
+@import "composants/recherche";
+
 
 /* importation du style principal du theme */
 //@import "base/titre";
 @import "base/general";
 
 @import "layout/entete";
+@import "layout/footer";
+
 //@import "composant/menu";
