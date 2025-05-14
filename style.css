@@ -38,6 +38,18 @@ a:focus {
     gap: 6px 0;
   }
 }
+.menu__li {
+  background-color: #7f500d;
+  margin: 0px 10px 0px 10px;
+  min-height: 30px;
+  align-items: center;
+  align-content: center;
+  border-radius: 5px;
+}
+.menu__a {
+  color: white;
+  margin: 10px;
+}
 .menu-item a {
   padding: 2px 5px;
 }
@@ -74,7 +86,7 @@ Le composant .carte
 }
 .carte__bouton {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: pink; /*#007bff*/
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -110,6 +122,25 @@ Le composant .carte
 }
 
 /* importation du style principal du theme */
+/*
+* {
+    border: 1px solid black;
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+.global {
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .chk__menu {
   display: none;
 }
@@ -142,8 +173,38 @@ Le composant .carte
 
 .entete {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+}
+.entete__imageDeFond {
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  z-index: -10;
+}
+.entete__texte-bouton {
+  flex-flow: column wrap;
+}
+.entete__texte-bouton {
+  width: 100%;
+  margin: 110px auto 0 auto;
+  border-radius: 0;
+  padding: var(--espacement-petit);
+  gap: var(--espacement-tresPetit);
+}
+.entete__conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.entete__recherche {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .entete__burger {
   display: none;

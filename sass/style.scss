@@ -22,9 +22,11 @@ Text Domain: club-voyage
 
 /* importation du style principal du theme */
 //@import "base/titre";
-//@import "base/general";
+@import "layout/general";
 
 @import "layout/entete";
 @import "layout/footer";
+
+//@import "composant/caroussel";
 
 //@import "composant/menu";

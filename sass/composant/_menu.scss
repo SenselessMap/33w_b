@@ -8,6 +8,20 @@
         flex-direction: column;
         gap : 6px 0;
       }
+
+      &__li {
+        background-color: #7f500d; //#0056b3
+        margin: 0px 10px 0px 10px;
+        min-height: 30px;
+        align-items: center;
+        align-content: center;
+        border-radius: 5px;
+      }
+
+      &__a {
+        color: white;
+        margin: 10px;
+      }
     
       //margin: 0;
       padding: 0;
