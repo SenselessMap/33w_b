@@ -1,0 +1,24 @@
+//Le css des posts (articles)
+
+article {
+    width: 80%;
+    flex: 0 1 30%;
+    margin: 1rem;
+    min-width: 30rem;
+    cursor: pointer;
+
+    &:hover article {
+        transform: scale(1.1);
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .wp-post-image {
+        height: 30rem; width: auto;
+        background-size: cover;
+        transition: transform 1s;
+    }
+    div {}
+}

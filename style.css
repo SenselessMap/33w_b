@@ -121,6 +121,25 @@ Le composant .carte
   padding: 0 3px;
 }
 
+article {
+  width: 80%;
+  flex: 0 1 30%;
+  margin: 1rem;
+  min-width: 30rem;
+  cursor: pointer;
+}
+article:hover article {
+  transform: scale(1.1);
+}
+article h2 {
+  font-size: 1.7rem;
+}
+article .wp-post-image {
+  height: 30rem;
+  width: auto;
+  background-size: cover;
+  transition: transform 1s;
+}
 /* importation du style principal du theme */
 /*
 * {
@@ -139,6 +158,10 @@ body {
   box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .chk__menu {
