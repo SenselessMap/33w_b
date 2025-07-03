@@ -1,11 +1,12 @@
 <?php
 /**
  * Gabarit permettant d'afficher une carte
-*/
+*/#
+//$lien = "<a href= .get"
 ?>
 <article class="populaire__article">
                 <figure class="carte__image">
-                    <!--<img src="../images/img1.jpg" alt="Image de voyage">-->
+                    
                 </figure>
                 <div class="carte__contenu">
                     <?php
