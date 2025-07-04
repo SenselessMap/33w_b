@@ -10,20 +10,27 @@
 
 <?php get_template_part('gabarit/hero'); ?>
 
-<section class="populaire">
-  <div class="global">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <article class="populaire__article">
-        <?php if ( has_post_thumbnail() ) : ?>
-          <div class="populaire__image">
-            <?php the_post_thumbnail('medium'); ?>
-          </div>
-        <?php endif; ?>
-        <h2 class="populaire__titre"><?php the_title(); ?></h2>
-        <div class="populaire__contenu"><?php the_content(); ?></div>
-      </article>
-    <?php endwhile; endif; ?>
-  </div>
-</section>
+<div class="populaire__grid">
+  <section class="populaire">
+      <div class="global">
+          <?php
+            $args = array(
+              'category_name' => 'populaire',
+              'posts_per_page' => 10,
+            );
+            $populaire_query = new WP_Query($args);
+
+            if ($populaire_query->have_posts()) :
+              while ($populaire_query->have_posts()) : $populaire_query->the_post();
+                get_template_part('gabarit/carte');
+              endwhile;
+              wp_reset_postdata();
+            else :
+              echo "<p>Aucun article populaire trouvé.</p>";
+            endif;
+          ?>
+      </div>
+  </section>
+</div>
 
 <?php get_footer(); ?>

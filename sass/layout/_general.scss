@@ -49,7 +49,85 @@ h2, p {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  /*flex-wrap: wrap; On le retire*/
+  flex-direction: row;
+}
+
+  .card {
+    background-color: beige;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.populaire__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.populaire__article {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 420px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.carte__image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.carte__contenu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.carte__titre {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.carte__description {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carte__bouton {
+  margin-top: auto;
+  align-self: flex-start;
+  background-color: #336455;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.carte__bouton:hover {
+  background-color: #375249;
 }
