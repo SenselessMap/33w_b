@@ -7,6 +7,11 @@ https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 # Commit 7
 - Ajout de search.php et utilisation de la fonction de recherche de github
 - J'ai corrigé la barre de recherche elle fonctionne, il ne reste qu'à corriger les pages sur lesquelles les liens mènent. Dans le prochain commit
+- Ajout d'une page single.php
+- La barre de recherche ne s'affiche plus dans le nav si on se trouve dans front-page.php, car elle se trouve dans le hero
+Reste à:
+- Ajustement css sur categorie.php
+- Ajouter les images et ajuster le css dans single.php (les articles)
 
 # Commit 6
 - Supression de /sass/ entièrement, car il n'est pas nécéssaire sur le site en ligne.
