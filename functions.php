@@ -50,6 +50,7 @@ add_action( 'pre_get_posts', 'modifie_requete_principal' );
 
 function theme_customize_register($wp_customize) {
 
+    // -- Hero background image (already present) --
     $wp_customize->add_setting('hero_bg_image', array(
         'default' => '',
         'transport' => 'refresh',
@@ -64,6 +65,32 @@ function theme_customize_register($wp_customize) {
             'settings' => 'hero_bg_image'
         )
     ));
+
+    $wp_customize->add_setting('footer_github_icon', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'footer_github_icon_control',
+        array(
+            'label' => __('Icône GitHub pour le pied de page'),
+            'section' => 'title_tagline',
+            'settings' => 'footer_github_icon',
+        )
+    ));
+
+    $wp_customize->add_setting('footer_github_url', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url',
+    ));
+
+    $wp_customize->add_control('footer_github_url_control', array(
+        'label' => __('Lien GitHub'),
+        'section' => 'title_tagline',
+        'settings' => 'footer_github_url',
+        'type' => 'url',
+    ));
 }
 add_action('customize_register', 'theme_customize_register');
-
