@@ -4,6 +4,14 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 8
+- Génération des info température, appréciation pour single.php (articles)
+- Ce qui reste à faire:
+- 1-Utiliser la logique dans front-page pour categorie.php
+- Réparer le overflow-x des articles dans categorie.php
+- Mettre à jour manuellement les 70 articles pour générer l'appréciation et température pour chaque
+- ![Alt text](github/image.png)
+
 # Commit 7
 - Ajout de search.php et utilisation de la fonction de recherche de github
 - J'ai corrigé la barre de recherche elle fonctionne, il ne reste qu'à corriger les pages sur lesquelles les liens mènent. Dans le prochain commit
