@@ -107,22 +107,49 @@ Le composant .carte
   background-color: #0056b3;
 }
 
-.recherche {
+.recherche, .acceuil_recherche {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.recherche__input {
+.recherche__input, .acceuil_recherche__input {
   flex: 1;
   height: 1.8rem;
   border: none;
   outline: none;
   border-right: 1px dotted rgba(0, 0, 0, 0.2);
 }
-.recherche__img {
+.recherche__img, .acceuil_recherche__img {
   flex: 0 0 20px;
   padding: 0 3px;
+}
+
+.acceuil_recherche__input {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+}
+.acceuil_recherche__img {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.acceuil_recherche__img:hover {
+  background-color: rgb(219, 147, 11);
+}
+.acceuil_recherche__img img {
+  width: 50px;
+  height: 50px;
 }
 
 article {
@@ -153,7 +180,14 @@ body {
   font-family: "Alice", serif;
   font-size: 20px;
   background-color: #74988c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body {
   height: 100%;
+  margin: 0;
 }
 
 * {
@@ -162,13 +196,23 @@ body {
   box-sizing: border-box;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 a, li, ul {
   text-decoration: none;
   color: inherit;
 }
 
 img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   display: block;
 }
 
@@ -390,22 +434,35 @@ h2, p {
   }
 }
 
-.hero {
-  min-height: 60vh;
+.hero_row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.hero_row .col p {
+  font-size: 25px;
 }
 
 .hero_contenu {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
+  flex: 1 1 60%;
+  min-width: 300px;
+  max-width: 60%;
+  /*background-color: rgba(0, 0, 0, 0.4);*/
+  padding: 2rem 2rem 2rem 7rem;
   border-radius: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.acceuil_recherche {
+  flex: 0 0 auto;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  padding-right: 7rem;
 }
 
 /*

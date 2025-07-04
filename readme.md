@@ -4,6 +4,10 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 7
+- Ajout de search.php et utilisation de la fonction de recherche de github
+- J'ai corrigé la barre de recherche elle fonctionne, il ne reste qu'à corriger les pages sur lesquelles les liens mènent. Dans le prochain commit
+
 # Commit 6
 - Supression de /sass/ entièrement, car il n'est pas nécéssaire sur le site en ligne.
 - Ajout de l'image de héro
