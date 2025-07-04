@@ -26,12 +26,17 @@
                             'container' => 'nav',
                             'container_class' => 'entete__menu',
                 )); ?> 
-                <div class="entete__recherche">
-                    <form  class="recherche">
-                        <input type="text" class="recherche__input">
-                        <img  class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
-                    </form>
-                </div>
+                <?php
+                if ( ! is_front_page() && ! is_home() ) : 
+                ?>
+                <form class="acceuil_recherche" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                    <input type="text" class="acceuil_recherche__input" name="s" placeholder="Je veux aller...">
+                    <button type="submit" class="acceuil_recherche__img">
+                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20" alt="Rechercher">
+                    </button>
+                </form>
+                <?php endif; ?>
+
             </div>
         </div>
     </header>

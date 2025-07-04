@@ -1,17 +1,30 @@
-.hero {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+.hero_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.hero_row .col p {
+    font-size: 25px;
 }
 
 .hero_contenu {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 1rem;
+    flex: 1 1 60%; 
+    min-width: 300px; 
+    max-width: 60%;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    padding: 2rem 2rem 2rem 7rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: left;
+}
+
+.acceuil_recherche {
+    flex: 0 0 auto;
+    min-width: 200px; 
+    display: flex;
+    align-items: center;
+    padding-right: 7rem;
 }
