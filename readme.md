@@ -5,9 +5,9 @@ Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
 # Commit 5
-Création de le branche tp2_p1 suppression de le branche tp2
-Nettoyage de la structure sass (suppression de style.css et style.css.map du dossier /sass/)
-Retirer d'autre fichier innutile (nettoyage) index.html
+- Création de le branche tp2_p1 suppression de le branche tp2
+- Nettoyage de la structure sass (suppression de style.css et style.css.map du dossier /sass/)
+- Retirer d'autre fichier innutile (nettoyage) index.html
 
 # Commit 4
 Remise tp1 p3
