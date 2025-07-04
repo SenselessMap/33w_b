@@ -4,7 +4,7 @@
 
 .chk_menu:checked ~ .entete__nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .burger{
@@ -24,10 +24,17 @@
     display: flex;
 }
 
+.entete__logo {
+  img.custom-logo {
+    max-height: 100px;
+    width: auto;
+  }
+}
 .entete{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    background-color: beige;
 
     &__imageDeFond {
         position: absolute;
@@ -58,17 +65,15 @@
     }
 
     &__recherche {
-        position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
     }
 
     &__burger {
         display: none;
         @media screen and (max-width:$point__rupture) {
             display : none;
-            flex-direction: column;
+            flex-direction: row;
             height: 52vh;
             width: 100vw;
             padding-bottom: 20px;

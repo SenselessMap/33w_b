@@ -6,8 +6,9 @@
 ?>
 
 <?php 
-$hero_auteur = get_theme_mod('hero_title', 'Default Title'); 
+$hero_auteur = get_theme_mod('hero_title', 'Hannah Lauzon'); 
 $hero_adresse = get_theme_file_uri();
+$bg_image = get_theme_mod('hero_bg_image');
 ?>
 
 
@@ -16,5 +17,5 @@ $hero_adresse = get_theme_file_uri();
     <p class="hero_description">
         <?php bloginfo('description') ?>
     </p>
-    <p>Auteur du theme: <?= $hero_auteur ?></p>
+    <p>Site d'<?= $hero_auteur ?></p>
 </div>

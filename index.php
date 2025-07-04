@@ -19,6 +19,8 @@ $args = array(
 $query = new WP_Query($args);
 ?>
 
+<?php get_template_part('gabarit/hero'); ?>
+
 <section class="populaire">
   <div class="global">
     <?php if ($query->have_posts()) : ?>

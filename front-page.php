@@ -8,9 +8,7 @@
 
 <?php get_header(); ?>
 
-<section class="hero" style="background-image: url('<?php get_template_directory_uri()?>images/img1.jpg');">
-    <?php get_template_part("gabarit/hero"); ?>
-</section>
+<?php get_template_part('gabarit/hero'); ?>
 
 <section class="populaire">
   <div class="global">
