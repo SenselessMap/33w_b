@@ -4,6 +4,11 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 9
+Navigation complète et fonctionelle. Category.php fonctionne, car il y avait des problème on local et le lien ne pouvait pas accéder, mais sur le site cela fonctionne.
+- Fixed le gros problème de la grille d'article qui overflow honrizontalement hors du site.
+- Pour la remise que je ferai demain, je dois juste: Rajouter 70 images, températures et des ajustements css tels que les icônes dans le footer, rajouter des gap, etc.
+
 # Commit 8
 - Génération des info température, appréciation pour single.php (articles)
 - Ce qui reste à faire:

@@ -111,14 +111,12 @@ Le composant .carte
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input, .acceuil_recherche__input {
   flex: 1;
   height: 1.8rem;
   border: none;
   outline: none;
-  border-right: 1px dotted rgba(0, 0, 0, 0.2);
 }
 .recherche__img, .acceuil_recherche__img {
   flex: 0 0 20px;
@@ -246,7 +244,7 @@ h2, p {
 .global {
   padding: 0;
   box-sizing: border-box;
-  max-width: 1000px;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -270,12 +268,16 @@ h2, p {
   padding: 2px 16px;
 }
 
-.populaire__grid {
+.populaire__grid .global {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-bottom: 3rem;
+}
+
+.populaire__grid .global > article.carte {
+  flex: 0 1 calc(33.3333333333% - 20px);
+  box-sizing: border-box;
 }
 
 .populaire__article {
@@ -330,6 +332,28 @@ h2, p {
 
 .carte__bouton:hover {
   background-color: #375249;
+}
+
+.categorie__titre {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.categorie__description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero--fake {
+  background-image: none !important;
+  background-color: #004466;
+  color: white;
+}
+.hero--fake .hero_contenu {
+  background: none;
+  text-align: left;
+  padding: 2rem;
 }
 
 .chk__menu {
@@ -471,6 +495,20 @@ h2, p {
   display: flex;
   align-items: center;
   padding-right: 7rem;
+}
+
+.hero_contenu--centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_contenu--centered .hero_titre, .hero_contenu--centered .hero_description {
+  text-align: center;
+}
+
+.hero--fake {
+  padding: 0;
 }
 
 /*
