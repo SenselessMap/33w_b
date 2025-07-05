@@ -28,3 +28,17 @@
     align-items: center;
     padding-right: 7rem;
 }
+
+.hero_contenu--centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_contenu--centered .hero_titre, .hero_contenu--centered .hero_description {
+    text-align: center;
+}
+
+.hero--fake {
+    padding: 0;
+}
