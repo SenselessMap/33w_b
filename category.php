@@ -12,13 +12,7 @@
   <section class="populaire">
       <div class="global">
           <?php
-            if (have_posts()) :
-              while (have_posts()) : the_post();
-                get_template_part('gabarit/carte');
-              endwhile;
-            else :
-              echo "<p>Aucun article trouvé dans cette catégorie! :(</p>";
-            endif;
+            get_template_part('gabarit/galerie');
           ?>
       </div>
   </section>
