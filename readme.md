@@ -4,6 +4,16 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 12
+- Ajout, dans le customizer de 2 panels: ✅ Hero et ✅ Footer.
+- Hero peut modifier ✅ les images du carroussel. ✅ La couleur de fond et ✅ le contenu du texte.
+- Footer peut modifier le courriel ✅ le nom ✅ et le texte du input ✅
+- Il y a un fadein pour le carrousel ✅
+- Les get_template ont été tous supprimé. Les fonctions ont été rajouté dans functions.php.
+- Création de vague.php dans functions/ pour créer la vague
+- Suppression de gabarit/ ainsi que son contenu: carte.php, fake-hero.php, galerie.php, hero.php
+- Ajustement CSS du footer
+
 # Commit 11
 - Début du changement de tous les get_template vers des fonction php dans functions.php
 

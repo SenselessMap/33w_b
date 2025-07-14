@@ -8,7 +8,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('gabarit/hero'); ?>
+<?php theme_33w_display_hero(); ?>
 
 <div class="populaire__grid">
   <section class="populaire">
@@ -23,7 +23,7 @@
 
             if ($populaire_query->have_posts()) :
               while ($populaire_query->have_posts()) : $populaire_query->the_post();
-                get_template_part('gabarit/carte');
+                theme_33w_display_carte();
               endwhile;
               wp_reset_postdata();
             else :

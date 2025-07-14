@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('gabarit/fake-hero'); ?>
+<?php theme_33w_display_fake_hero(); ?>
 
 <div class="populaire__grid">
   <section class="populaire">
