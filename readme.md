@@ -4,6 +4,9 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 11
+- Début du changement de tous les get_template vers des fonction php dans functions.php
+
 # Commit 10
 - Ajout de la vague svg dynamiquement
 - Ajout de fonction php pour générer du html au lieu de fonction wordpress. theme_33w_svg_wave()
