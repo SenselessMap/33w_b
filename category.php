@@ -12,7 +12,7 @@
   <section class="populaire">
       <div class="global">
           <?php
-            get_template_part('gabarit/galerie');
+            theme_33w_display_galerie();
           ?>
       </div>
   </section>
