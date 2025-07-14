@@ -1,8 +1,14 @@
-# TP1 site de voyage
+# TP3 site de voyage
 Première étape du développpement d'un thème WP
 Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
+
+# Commit 10
+- Ajout de la vague svg dynamiquement
+- Ajout de fonction php pour générer du html au lieu de fonction wordpress. theme_33w_svg_wave()
+- Ajout du caroussel en php sans fonction wordpress.
+- Migration de function.php vers configuration-generale.php ainsi que mon-customizer.php
 
 # Commit 9
 Navigation complète et fonctionelle. Category.php fonctionne, car il y avait des problème on local et le lien ne pouvait pas accéder, mais sur le site cela fonctionne.

@@ -12,7 +12,8 @@
 
 <div class="populaire__grid">
   <section class="populaire">
-      <div class="global">
+      <div class="global" style="position: relative;">
+
           <?php
             $args = array(
               'category_name' => 'populaire',
@@ -30,7 +31,9 @@
             endif;
           ?>
       </div>
+      <div class="svg-wave-container">
+        <?php theme_33w_svg_wave(); ?>
+      </div>
   </section>
 </div>
-
 <?php get_footer(); ?>

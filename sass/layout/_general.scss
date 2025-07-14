@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   font-family: $font-alice;
   font-size: $size-texte;
-  background-color: $vert-principal;
+  //background-color: $vert-principal;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -183,4 +183,17 @@ h2, p {
     text-align: left;
     padding: 2rem;
   }
+}
+
+.populaire__grid,
+.populaire,
+.global {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.populaire__grid > section {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

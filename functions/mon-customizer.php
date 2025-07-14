@@ -2,36 +2,140 @@
 /**
  * Configuration des nouveaux panneaux de customizer
  */
-function theme_33w_customize_register($wp_customize) {
-    // Section Hero
+
+function theme_customize_register($wp_customize) {
+
+    $wp_customize->add_panel('hero_panel', array(
+      'title' => __('Section Hero', 'theme-33w'),
+      'priority' => 30,
+    ));
+
     $wp_customize->add_section('hero_section', array(
-        'title' => __('Section de Hero', 'theme_33w'),
-        'priority' => 30,
+      'title' => __('Personnalisation Hero', 'theme-33w'),
+      'panel' => 'hero_panel',
     ));
 
-    // Auteur du theme (titre du Hero)
-    $wp_customize->add_setting('hero_auteur', array(
-        'default' => __('Bienvenue sur mon site', 'theme_33w'),
-        'sanitize_callback' => 'sanitize_text_field',
+    $wp_customize->add_setting('hero_bg_image', array(
+        'default' => '',
+        'transport' => 'refresh',
     ));
 
-    $wp_customize->add_control('hero_auteur', array(
-        'label' => __('Auteur du thème', 'theme_33w'),
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'hero_bg_image_control',
+        array(
+            'label' => __('Image de fond du Hero'),
+            'section' => 'hero_section',
+            'settings' => 'hero_bg_image'
+        )
+    ));
+
+    for ($i = 1; $i <= 3; $i++) {
+        $wp_customize->add_setting("hero_carousel_image_$i", array(
+            'default'           => '',
+            'sanitize_callback' => 'esc_url_raw',
+            'transport'         => 'refresh',
+        ));
+        $wp_customize->add_control(new WP_Customize_Image_Control(
+            $wp_customize,
+            "hero_carousel_image_{$i}_control",
+            array(
+                'label'    => __("Image du carrousel #$i", 'theme-33w'),
+                'section'  => 'hero_section',
+                'settings' => "hero_carousel_image_$i",
+            )
+        ));
+    }
+
+    $wp_customize->add_setting('footer_github_icon', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'footer_github_icon_control',
+        array(
+            'label' => __('Icône GitHub pour le pied de page'),
+            'section' => 'title_tagline',
+            'settings' => 'footer_github_icon',
+        )
+    ));
+
+    $wp_customize->add_setting('footer_github_url', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url',
+    ));
+
+    $wp_customize->add_control('footer_github_url_control', array(
+        'label' => __('Lien GitHub'),
+        'section' => 'title_tagline',
+        'settings' => 'footer_github_url',
+        'type' => 'url',
+    ));
+
+    $wp_customize->add_setting('hero_title', array(
+        'default' => 'Explorez le monde',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('hero_title_control', array(
+        'label' => __('Titre principal du Hero'),
         'section' => 'hero_section',
+        'settings' => 'hero_title',
         'type' => 'text',
     ));
-
-    // Background
-    $wp_customize->add_setting('hero_background', array(
-        'default' => '',
-        'sanitize_callback' => 'esc_url_raw',
+    $wp_customize->add_setting('hero_text_color', array(
+        'default' => '#ffffff',
+        'transport' => 'refresh',
     ));
-
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_control', array(
-        'label' => __('Hero Background Image', 'theme_33w'),
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_text_color_control', array(
+        'label' => __('Couleur du texte du Hero'),
         'section' => 'hero_section',
-        'settings' => 'hero_background',
+        'settings' => 'hero_text_color',
     )));
-}
 
-add_action("customize_register", "theme_33w_customize_register");
+        // ========================= Footer =================================
+        $wp_customize->add_panel('footer_panel', array(
+            'title' => __('Footer', 'theme-33w'),
+            'priority' => 40,
+        ));
+        $wp_customize->add_section('footer_section', array(
+            'title' => __('Informations de contact', 'theme-33w'),
+            'panel' => 'footer_panel',
+        ));
+
+        $wp_customize->add_setting('footer_email', array(
+            'default' => 'ClubVoyage33w@hotmail.com',
+            'sanitize_callback' => 'sanitize_email',
+        ));
+        $wp_customize->add_control('footer_email_control', array(
+            'label' => __('Adresse courriel'),
+            'section' => 'footer_section',
+            'settings' => 'footer_email',
+            'type' => 'email',
+        ));
+
+        $wp_customize->add_setting('footer_phone', array(
+            'default' => '555 555-5555',
+            'sanitize_callback' => 'sanitize_text_field',
+        ));
+        $wp_customize->add_control('footer_phone_control', array(
+            'label' => __('Téléphone'),
+            'section' => 'footer_section',
+            'settings' => 'footer_phone',
+            'type' => 'text',
+        ));
+
+
+        $wp_customize->add_setting('footer_description', array(
+            'default' => 'Recherche de destination:',
+            'sanitize_callback' => 'sanitize_text_field',
+        ));
+        $wp_customize->add_control('footer_description_control', array(
+            'label' => __('Ligne de description'),
+            'section' => 'footer_section',
+            'settings' => 'footer_description',
+            'type' => 'text',
+        ));
+}
+add_action('customize_register', 'theme_customize_register');
