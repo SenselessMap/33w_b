@@ -4,6 +4,10 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 13
+- Correction de la position du footer et la vague dans single.php
+- Début de la finition d'ajout des images, températures et qualité dans les 35 destiantions restantes (cela ne se verra pas dans github, mais wordpress. Je ne ferai pas un autre commit si je ne vois pas d'erreur)
+
 # Commit 12
 - Ajout, dans le customizer de 2 panels: ✅ Hero et ✅ Footer.
 - Hero peut modifier ✅ les images du carroussel. ✅ La couleur de fond et ✅ le contenu du texte.

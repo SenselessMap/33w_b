@@ -49,10 +49,10 @@
                 <?php endif; ?>
             </article>
         </section>
-        <div class="svg-wave-container">
-            <?php theme_33w_svg_wave(); ?>
-        </div>
     </section>
 </main>
 
+<div class="svg-wave-container">
+    <?php theme_33w_svg_wave(); ?>
+</div>
 <?php get_footer(); ?>
