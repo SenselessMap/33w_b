@@ -4,6 +4,11 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 14
+- Ajout de la vague dans category.php
+- Ajout de toutes les 70 images, températures et critiques
+- Remise finale tp2 partie 2
+
 # Commit 13
 - Correction de la position du footer et la vague dans single.php
 - Début de la finition d'ajout des images, températures et qualité dans les 35 destiantions restantes (cela ne se verra pas dans github, mais wordpress. Je ne ferai pas un autre commit si je ne vois pas d'erreur)
