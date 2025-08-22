@@ -4,6 +4,11 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Examen finale (commit 19b et 20)
+- (19) Corrige des petites erreurs pour le devis
+- (20) Modifie le CSS pour ressembler aux maquettes. 
+- (20) Interface qui est mobile-friendly
+
 # Examen final (commit 15 16 17 18 19) Sur la branche tp2 (et pas tp2_finale)
 - (15) Création de la branche tp2 pour la correction de l'examen (pas la branche tp2_finale)
 - (15) Création de gabarit\erreur-404.php

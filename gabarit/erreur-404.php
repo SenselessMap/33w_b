@@ -4,8 +4,12 @@
     
     <!-- formulaire de search est ici -->
     <br>
-    <?php get_404_form(); ?>
-
+    <ul>
+        <li>
+            <a class="examen_a" href="<?php echo home_url(); ?>">Retour à l'acceuil</a>
+        </li>
+    </ul>
+    
     <!-- Menu -->
     <p>Vouliez-vous dire...</p>
     <nav class="erreur-404__menu">
@@ -20,4 +24,6 @@
         <?php endforeach; wp_reset_postdata(); ?>
         </ul>
     </nav>
+    <br>
+    <?php get_404_form(); ?>
 </div>

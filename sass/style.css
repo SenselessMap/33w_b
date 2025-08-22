@@ -659,16 +659,45 @@ footer {
   margin: 0;
 }
 
-.erreur-404__menu ul li a {
+.erreur-404__menu ul li a,
+.erreur-404 ul li a.examen_a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   background-color: rgba(236, 136, 13, 0.8156862745);
   border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.erreur-404__menu ul li a:hover,
+.erreur-404 ul li a.examen_a:hover {
+  background-color: #d16f00;
 }
 
 .erreur-404 .acceuil_recherche {
   padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .erreur-404 h1 {
+    font-size: 4rem;
+    top: 20px;
+    left: 0;
+  }
+  .erreur-404 p {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .erreur-404__menu ul,
+  .erreur-404 ul li a.examen_a {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .erreur-404__menu ul li a,
+  .erreur-404 ul li a.examen_a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
