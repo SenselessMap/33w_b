@@ -130,7 +130,7 @@ function theme_customize_register($wp_customize) {
         $wp_customize->add_setting('footer_description', array(
             'default' => 'Recherche de destination:',
             'sanitize_callback' => 'sanitize_text_field',
-        ));
+        )); 
         $wp_customize->add_control('footer_description_control', array(
             'label' => __('Ligne de description'),
             'section' => 'footer_section',

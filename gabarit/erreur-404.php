@@ -10,7 +10,7 @@
     <p>Vouliez-vous dire...</p>
     <nav class="erreur-404__menu">
         <ul>
-        <?php
+        <?php 
             $random_posts = get_posts(array(
                 'posts_per_page' => 5,
                 'orderby' => 'rand'

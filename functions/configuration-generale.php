@@ -48,7 +48,7 @@ add_filter('script_loader_tag', function($tag, $handle, $src) {
     }
     return $tag;
 }, 10, 3);
-
+ 
 
 function modifie_requete_principal( $query ) {
   if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
