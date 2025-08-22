@@ -8,6 +8,7 @@ https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 - (19) Corrige des petites erreurs pour le devis
 - (20) Modifie le CSS pour ressembler aux maquettes. 
 - (20) Interface qui est mobile-friendly
+- ![Alt text](github/image3.png)
 
 # Examen final (commit 15 16 17 18 19) Sur la branche tp2 (et pas tp2_finale)
 - (15) Création de la branche tp2 pour la correction de l'examen (pas la branche tp2_finale)
