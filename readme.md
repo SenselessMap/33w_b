@@ -4,6 +4,16 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Examen final (commit 15 16 17 18 19) Sur la branche tp2 (et pas tp2_finale)
+- (15) Création de la branche tp2 pour la correction de l'examen (pas la branche tp2_finale)
+- (15) Création de gabarit\erreur-404.php
+- (15) Modification de functions.php et index.php pour handle la nouvelle page erreur-404.php
+- (16) Modification de index.php pour utiliser gabarit\erreur-404.php
+- (17) Modification de functions\configuration-generale.php et de functions\mon-customizer.php pour erreur-404.php
+- (18) CSS sass\layout\_erreur.scss
+- (19) Remise de l'examen final (https://gftnth00.mywhc.ca/33we_14/wp-admin/admin.php est up to date)
+- ![Alt text](github/image2.png)
+
 # Commit 14
 - Ajout de la vague dans category.php
 - Ajout de toutes les 70 images, températures et critiques

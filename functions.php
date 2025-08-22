@@ -46,6 +46,14 @@ function theme_33w_display_carte() {
     <?php
 }
 
+function theme_33w_register_menus() {
+    register_nav_menus(array(
+        'menu_404' => __('Menu 404', 'theme-33w'),
+    ));
+}
+add_action('after_setup_theme', 'theme_33w_register_menus');
+
+
 function theme_33w_display_hero() {
     $hero_auteur = get_theme_mod('hero_title', 'Hannah Lauzon'); 
     $bg_image = get_theme_mod('hero_bg_image');

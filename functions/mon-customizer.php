@@ -137,5 +137,39 @@ function theme_customize_register($wp_customize) {
             'settings' => 'footer_description',
             'type' => 'text',
         ));
+
+            $wp_customize->add_section('section_404', array(
+        'title' => __('Page 404', 'theme-33w'),
+        'priority' => 40,
+    ));
+
+    //examen
+
+    $wp_customize->add_setting('titre_404', array('default' => '404 Oops!'));
+    $wp_customize->add_control('titre_404', array(
+        'label' => __('Titre', 'theme-33w'),
+        'section' => 'section_404',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('message_404', array('default' => 'La page demandée est introuvable.'));
+    $wp_customize->add_control('message_404', array(
+        'label' => __('Message', 'theme-33w'),
+        'section' => 'section_404',
+        'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('image_bg_404');
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_bg_404', array(
+        'label' => __('Image d’arrière-plan', 'theme-33w'),
+        'section' => 'section_404',
+    )));
+
+    $wp_customize->add_setting('couleur_404', array('default' => '#000000'));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'couleur_404', array(
+        'label' => __('Couleur boutons et recherche', 'theme-33w'),
+        'section' => 'section_404',
+    )));
 }
 add_action('customize_register', 'theme_customize_register');
+

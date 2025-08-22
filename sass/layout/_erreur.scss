@@ -1,0 +1,48 @@
+.erreur-404 {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; //test 2
+    color:white;
+
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    padding-top:5rem;
+
+    align-items: center;
+}
+
+.erreur-404 h1 {
+	position: relative;
+	top: 50px;
+	left: 20px;
+	text-align: center;
+    font-size: 10rem;
+}
+
+
+.erreur-404__menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0 0 0;
+}
+
+.erreur-404__menu ul li {
+	margin: 0;
+}
+
+.erreur-404__menu ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	background-color: #ec880dd0;
+	border-radius: 5px;
+}
+
+.erreur-404 .acceuil_recherche {
+	padding-right: 0;
+}
