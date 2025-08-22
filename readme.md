@@ -13,7 +13,7 @@ https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 - (18) CSS sass\layout\_erreur.scss
 - (19) Remise de l'examen final (https://gftnth00.mywhc.ca/33we_14/wp-admin/admin.php est up to date)
 - ![Alt text](github/image2.png)
-
+ 
 # Commit 14
 - Ajout de la vague dans category.php
 - Ajout de toutes les 70 images, températures et critiques
