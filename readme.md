@@ -4,6 +4,9 @@ Auteur: Hannah Lauzon 1640340
 Addresse de la page github
 https://gftnth00.mywhc.ca/33we_14/front-page.php adresse du site
 
+# Commit 21
+- Ajout des modifications du footer et post avec wordpress
+
 # Examen finale (commit 19b et 20)
 - (19) Corrige des petites erreurs pour le devis
 - (20) Modifie le CSS pour ressembler aux maquettes. 
